@@ -1,0 +1,17 @@
+header, main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 25px auto;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  margin: 15px auto;
+  font-size: 22px;
+  font-style: italic;
+}
