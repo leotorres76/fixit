@@ -1,4 +1,40 @@
-console.log("Heyyyy")
+let buttonSend = document.querySelector('.button-send')
+buttonSend.addEventListener('click', formJSON)
+
+function formJSON(event) {
+  event.preventDefault()
+  let name = document.querySelector('#name').value
+  let email = document.querySelector('#email').value
+  let cargo = document.querySelector('#cargo').value
+  let empresa = document.querySelector('#empresa').value
+  let ip = document.querySelector('#txtIp').value
+
+  var Pessoa = function(name,email,cargo,empresa,ip) {
+    this.name = name
+    this.email = email
+    this.ip = ip
+
+    if (cargo) {
+      this.cargo = cargo
+    }
+    if (empresa) { 
+      this.empresa = empresa
+    }
+  }
+  var lead = new Pessoa(name,email,cargo,empresa,ip)
+}
+
+function sendDataLead(lead) {
+
+  var xhttp = new XMLHttpRequest()
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log("Requisiçao HTTP", this.responseText)
+    }
+  }
+  xhttp.open('POST',lead,true)
+  xhttp.send()
+}
 
 function getIp(callback)
 {

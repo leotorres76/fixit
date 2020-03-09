@@ -205,10 +205,11 @@
 
   <div>
     <h1>Exemplo de formulário para o Show me the Leads</h1>
-    <form method="POST" action="https://smtl.gama.academy/leads/4a6b3a43-5ffc-11ea-92b8-cb0262e26cca">
+    <form method="POST">
       <input
         name="name"
         type="text"
+        id="name"
         pattern="^\D{2,}\s[\D\s]{2,}$"
         placeholder="Nome e Sobrenome"
         title="Digite seu nome completo"
@@ -217,6 +218,7 @@
       <input
         name="email"
         type="email"
+        id="email"
         placeholder="e-mail"
         title="Digite um email válido"
         required
@@ -225,10 +227,11 @@
       <input type="text" name="cargo" placeholder="Cargo" id="cargo">
       <input type="text" name="empresa" placeholder="Empresa" id="empresa">
 
-      <input name="redirectTo" type="hidden" value="/agradecimentos.html" />
+      <input type="text" name="ip" disabled id="txtIp">
+      <button class="button-send" type="submit"> Enviar </button>
+
+      <!-- <input name="redirectTo" type="hidden" value="agradecimento.html" /> -->
       <input name="debugMode" type="hidden" value="true" />
-      <input type="text" disabled id="txtIp">
-      <input type="submit" />
     </form>
   </div>
 
