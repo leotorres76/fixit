@@ -2,10 +2,44 @@
 <html lang="pt-BR">
 
 <head>
+  <!-- Hotjar Tracking Code for http://a-conversa-afiada.com.br/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1720853, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> #Fixit </title>
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
+
+  <title> Conversa Afiada </title>
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+  <!-- STYLES -->
+  <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,13 +47,47 @@
 <body>
   <header>
     <div>
-      <h1> Hello World! </h1>
-      <p>Sejam bem vindos Fixities!</p>
+      <img src="img/logo.png" alt="Imagem logo">
     </div>
   </header>
+
   <main>
-    <img src="img/logo.png" alt="Imagem logo">
+    <div class="container">
+      <div class="chamada">
+        <h1> Transforme suas conversas em vendas </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. </p>
+        <button> <a href="#formulario"> </a> Cadastre-se </button>
+      </div>
+    </div>
+
+    <section>
+      <div>
+        <!-- action="https://smtl.gama.academy/leads/4a6b3a43-5ffc-11ea-92b8-cb0262e26cca" -->
+        <form method="POST" action="saveform">
+          <div id="formulario" class="formulario">
+            <input type="text" name="name" placeholder="Nome e Sobrenome" pattern="^\D{2,}\s[\D\s]{2,}$"
+              title="Informe seu nome completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="cargo" placeholder="Cargo">
+            <input type="text" name="empresa" placeholder="Empresa">
+
+            <input name="redirectTo" type="hidden" value="/agradecimento.html" />
+            <input name="debugMode" type="hidden" value="true" />
+
+            <button type="submit"> Enviar </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <iframe style="border: none;" width="100%" height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQG3zFsKcVdi8xI2MyzFL0V%2FUntitled%3Fnode-id%3D1%253A2%26scaling%3Dscale-down-width"
+        allowfullscreen></iframe>
+    </section>
   </main>
+
 </body>
 
 </html>
